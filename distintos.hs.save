@@ -1,0 +1,7 @@
+distintos :: [Int]->Bool
+
+distintosAux :: Int->[Int]->Bool
+istintosAux num [] = True
+distintosAux num (x:xs)
+  | num == x   false
+  | otherwise  distintosAux (x-1) xs

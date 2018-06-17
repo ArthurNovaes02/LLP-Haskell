@@ -1,0 +1,9 @@
+istaDec :: Int->[Int] -- lista da decomposicao
+ListaDec n = [ x | x <- [1 .. n-1], ((mod num x) == 0)] -- verifica os divisores do numero 
+
+pefeito :: Int->Bool
+perfeito n
+  | (sum (ListaDec n)) == num  = True
+  | otherwise                  = False
+
+

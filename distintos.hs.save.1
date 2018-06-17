@@ -1,0 +1,12 @@
+distintos :: [Int]->Bool
+distintos [] = True
+distintos (x:xs) = distintosAux x xs
+
+--passaList :: [Int]->Bool
+--passaList b (y:ys)
+--  distintosAux b ys
+
+distintosAux :: Int->[Int]->Bool
+distintosAux num [] = distintosAux num (x:xs)
+  | num == x   = False
+  | otherwise  = distintosAux num xs
